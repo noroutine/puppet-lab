@@ -1,6 +1,5 @@
 mod "puppetlabs/stdlib"
 mod "puppetlabs/ntp"
-mod "puppetlabs/docker_platform"
 mod "garethr/docker"
 mod "puppetlabs/apt"
 mod "stahnma/epel"
