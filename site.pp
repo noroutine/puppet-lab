@@ -10,11 +10,12 @@ node 'lu1.server.lu' {
   }
 
   docker::image { 'ubuntu':
+    ensure => 'present',
     image_tag => 'precise',
   }
 
   docker::run { 'helloworld':
-    image => 'base',
+    image => 'ubuntu:precise',
     command => '/bin/sh -c "while true; do echo hello world; sleep 1; done"',
   }
 }
